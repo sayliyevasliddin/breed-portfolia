@@ -1,0 +1,179 @@
+/* background-image- web sayt yoki element orqasiga rasm qo'yish uchun ishlatiladi. */
+
+.background{
+    background-image:url("https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg") ;
+    width: 600px;
+    height:600px;
+
+}
+
+/* background global values-
+
+1- inherit- bu ota elementdan voris olish.
+2- initial- default qiymat ya'ni hech qanday rasm qo'yilmaydi.
+3- revert- brauser standartiga yoki ajdod elementga nisbatan voris oladi ya'ni ajdodida style bo'lsa oladi bo'lmasa default qiymat qaytaradi.
+4- revert-layer-style qatlamlari bo'yicha bekor qilish.
+5- unset- agar element xusisiyati voris olayotgan bo'lsa inhert olmayotgan bo'lsa initial ishlaydi. 
+
+*/
+
+/* background-repeat- rasm takrorlanishini boshqaradi.
+
+1-repeat- ham vertikal ham gorizantal takrorlaydi.
+2-no-repeat- rasm 1 marta chiqadi va takrorlamaydi.
+3-repeat-x- x o'qi bo'yicha takrorlaydi.
+4-space- har bitta rasm orasida bo'sh joy tashlab orqa fonda takrorlaydi.
+5-round- dumaloq shaklda takrorlaydi.
+6-space-repeat- vertikal bo'sh joy tashlaydi.
+
+
+
+1-background-size-rasm o'lchamini boshqaradi.
+1.1-auto -rasm haqiqiy o'lchamida bo'ladi.
+1.2-contain -rasm butunlay qilib joylashtiriladi lekin bo'sh joy qolishi mumkun.
+1.3-cover -rasm butun elementni qoplaydi.
+
+
+2-background-position-rasmning joylashuvini boshqaradi.
+qiymatlari:
+1.top
+2.left
+3.center
+4.right
+5.bottom
+
+
+3-background-attachment- rasm sahifa scroll bo'lganda qanday harakatlanishni belgilaydi.
+qiymatlari:
+1.scroll-rasm siljiganda rasm ham siljiydi.
+2.fixed-rasm qotib turadi sahifa siljiganda joyida qoladi.
+3.local-element ichidagi matn siljiganda rasm ham siljiydi.
+
+
+4-background: image repeat position size attachment- hammasini birga yozish.
+
+
+5-background-blend-mode-bu xususiyat bir nechta fon va ranglar qo'llanilganda ularning aralashish effectini boshqaradi.
+qiymatlari:
+1.normal
+2.multiply
+3.screen
+4.overlay
+5.darken
+6.lighten
+7.difference
+8.soft-light
+9.hard-light
+
+6-background-clip-fon ko'rinadigan hududni belgilash
+qiymatlari:
+1.border-box- fon rangi va rasmi bordergacha ko'rinadi.
+2.padding-box-paddingacha ko'rinadi.
+3.content-box-contentgacha ko'rinadi.
+4.text- rasm faqat textning orqa fonida ko'rinadi.
+
+7-background-origin-fon joylashuvining boshlanish nuqtasini belgilash.
+qiymatlari:
+border-box- fon rasmi border tashqarisidan boshlanadi.
+padding-box- fon rasmi padding ichkarisidan boshlanadi.
+content-box-content hududidan boshlanadi.
+
+
+*/
+
+/* -------------styling images----------------
+border-radius: bu rasm burchaklarini dumaloq qilish 
+
+img {
+    border-radius:50%;
+}
+
+thumbnail: bu kichik rasm va atrofi ingichka chegara bilan o'ralgan ko'rinish.
+
+opacity: rasmni shaffof ko'rinishini taminlab beradi.(o va 1 oraliqda qiymatlar beriladi)
+
+
+
+*/
+
+
+/* css da gradient element fonini bir rangdan ikkinchi ranga silliq to'ldirish.
+
+css da 3 ta asosiy turdagi gradient mavjud::after
+1-Linear gradients-bu ranglar chiziq bo'ylab o'tadi.
+2-Radial gradients
+3-Conic gradients
+
+*/
+
+/* .gradient{
+background-image: linear-gradient(red,yellow) ;
+display:inline-block;
+width:400px;
+height:300px; 
+} */
+/* linear-gradient(direction,color1,color2) bu yerda direction qayerdan boshlanishi agar berilmasa defoult qiymat bo'ladi*/
+
+
+
+
+/* .grad1 {
+    background-image: linear-gradient(direction, color1, color2);  DIRECTION default qiymati top to bottom 
+    Qiymatlari: to bottom, to top, to right, to left, burchakda: 45deg, 90deg, 135deg .... 
+    background-image: linear-gradient(to top, green 0%, yellow 50%, red 70%); 
+    background-image: linear-gradient(top left to bottom right, green, yellow, red);
+    background-image: linear-gradient(90deg, green, yellow, red);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%); 
+
+    width: 400px;
+    height: 400px;
+} */
+
+
+/* radial-gradient--Ranglar doira shaklda markazdan tashqariga tarqaladi.
+
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+
+qiymatlari:
+shape =circle yoki ellips;
+size:
+closest-side-- markazdan eng yaqin tomongacha;
+farthest-side-- markazdan eng uzoq tomongacha;
+closest-corner-- markazdan eng yaqin burchakgacha;
+farthest-corner-- markazdan eng uzoq burchakgacha;
+
+
+at position: to bottom, to top, to left, to right;
+
+
+*/
+
+/* .radical{
+    background-image: radial-gradient(circle, brown, yellow, green);
+    width:150px;
+    height:200px;
+    background-color: red;
+} */
+
+
+/* conic gradients--konus shaklidagi gradient hisoblanadi. Ranglar markazdan soat strelkasiga qarab aylanib tarqaladi */
+/* background-image: conic-gradient([from angle] [at position,] color[degree], color[degree],) 
+
+from-angle-- qaysi burchakdan boshlash
+at position-- to top,to right, to bottom, to top
+color[degree]--
+*/
+
+/* .conic{
+
+    background-image: conic-gradient(green, yellow, red);
+    width:200px;
+    height:150px;
+} */
+
+.button{
+    width:80px;
+    height:40px;
+    background-image: linear-gradient(to right, blue -125px,purple);
+}
